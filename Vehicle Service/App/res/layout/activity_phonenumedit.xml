@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".phonenumedit">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/backbtn"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:src="@drawable/bckbtn"
+        app:backgroundTint="@color/whiteBack" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="30dp"
+        android:text="Phone number"
+        android:fontFamily="serif"
+        android:textSize="18dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/cpp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:ccp_defaultNameCode="India" />
+
+        <EditText
+            android:id="@+id/PhoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:hint="0123456789"
+            android:inputType="phone"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/savephone"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorBackButton"
+        android:text="save"
+        android:fontFamily="serif"
+        android:textColor="@color/whiteBack"
+        android:textSize="30dp" />
+
+</LinearLayout>

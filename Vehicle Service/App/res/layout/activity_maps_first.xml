@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivityFirst">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivityFirst" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/account"
+        android:layout_width="64dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/whiteBack"
+        android:onClick="accountactivity"
+        android:src="@mipmap/account_icon" />
+
+        <!--<android.support.design.widget.FloatingActionButton
+            android:id="@+id/gps"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:backgroundTint="@color/whiteBack"
+            android:src="@mipmap/gps_icon" />-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/goonline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/roundbtn"
+        android:fontFamily="serif"
+        android:text="REQUEST"
+        android:textColor="@color/whiteBack"
+        android:textStyle="bold" />
+
+
+
+</FrameLayout>
