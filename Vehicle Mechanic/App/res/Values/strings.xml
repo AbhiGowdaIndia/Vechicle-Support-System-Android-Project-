@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Vehicle Mechanic</string>
+    <string name="welcome">Welcome to the Vehicle Mechanic app.</string>
+    <string name="two_wheeler">Two wheelers includes motorcycles and scooters.</string>
+    <string name="three_wheeler">Three wheelers includes tempo and auto-rickshaws.</string>
+    <string name="four_wheeler">Four wheelers includes car, jeep, tempo traveller and etc. Six wheelers includes bus, truck, dodge and etc.</string>
+    <string name="six_wheeler">Six wheelers includes bus, truck and etc. </string>
+    <string name="six_axel">Six axle wheelers includes Dodge(10 tire) vehicle.</string>
+    <string name="alltype">This includes all type of vehicles.</string>
+    <string name="terms">By clicking "I accept" or continue below (as such may be required by applicable law), expressly acknowledges that I: (i) has read and understood this Addendum; (ii)agrees to be bound by the terms and conditions of this addendum.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_mechanic_maps">Map</string>
+</resources>

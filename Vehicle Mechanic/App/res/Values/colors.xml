@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#303F9F</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackButton">#000000</color>
+    <color name="whiteBack">#ffffff</color>
+    <color name="sigbut">#3c65cc</color>
+    <color name="call">#078c0c</color>
+    <color name="roundbtn">#07357e</color>
+    <color name="slectback">#3c8c72</color>
+    <color name="cardclr">#78afe6</color>
+</resources>
