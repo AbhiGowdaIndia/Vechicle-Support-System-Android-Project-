@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.vehicleservice3">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icons"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <service android:name=".OnKilled" android:stopWithTask="false"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".custregister"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".custregister2"
+            android:parentActivityName=".custregister"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".phoneverify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".selectvehicletype"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivityFirst"
+            android:label="@string/title_activity_maps_first"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".accountactivity"
+            android:parentActivityName=".CustomerMapsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomerName"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".editactivity"
+            android:parentActivityName=".accountactivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nameedit"
+            android:parentActivityName=".editactivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".phonenumedit"
+            android:parentActivityName=".editactivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".emailedit"
+            android:parentActivityName=".editactivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".editimage"
+            android:parentActivityName=".editactivity" />
+        <activity
+            android:name=".editphoneverify"
+            android:parentActivityName=".editactivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomerMapsActivity"
+            android:label="@string/title_activity_customer_maps"></activity>
+
+    </application>
+
+</manifest>
