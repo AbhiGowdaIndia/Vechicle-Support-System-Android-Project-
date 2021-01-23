@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".register1">
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/backtmain"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:src="@mipmap/back_btn_blk"
+        app:backgroundTint="@color/whiteBack" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Let's start by creating your account"
+                android:textColor="@color/colorBackButton"
+                android:textSize="32dp" />
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mechanic ID"
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorBackButton"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/mid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittxt"
+                    android:textSize="25dp" />
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="First name"
+                        android:fontFamily="serif"
+                        android:textColor="@color/colorBackButton"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:fontFamily="serif"
+                        android:background="@drawable/custom_edittxt"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:fontFamily="serif"
+                        android:text="Last name"
+                        android:textColor="@color/colorBackButton"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:fontFamily="serif"
+                        android:background="@drawable/custom_edittxt"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Phone number"
+                    android:textColor="@color/colorBackButton"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/pnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittxt"
+                    android:inputType="phone"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkbtn"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="@string/terms"/>
+
+            <Button
+                android:id="@+id/verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_btn2"
+                android:textColor="@color/whiteBack"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:text="I ACCEPT/CONTINUE"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

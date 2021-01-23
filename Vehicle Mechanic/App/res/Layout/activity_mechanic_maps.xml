@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MechanicMapsActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/account"
+        android:layout_width="64dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardclr"
+        android:src="@mipmap/account_icon" />
+    <Button
+        android:id="@+id/gpson"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/custom_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_gravity="bottom"
+        android:fontFamily="serif"
+        android:text="GO ONLINE"
+        android:textColor="@color/whiteBack"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/goonline"
+        android:visibility="gone"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/custom_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_gravity="bottom"
+        android:fontFamily="serif"
+        android:text="GO ONLINE"
+        android:textColor="@color/whiteBack"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/dummy_info"
+        android:visibility="gone"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cust_info"
+        android:background="@color/whiteBack"
+        android:visibility="gone"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center"
+                android:id="@+id/p_image"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                map:civ_border_color="@color/whiteBack"
+                map:civ_border_width="2dp"
+                android:src="@mipmap/account_icon"/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/colorBackButton"
+                android:fontFamily="serif"
+                android:text="..............."/>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/call"
+                android:layout_gravity="center"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:src="@mipmap/call_icon2"
+                map:backgroundTint="@color/call" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service Id: "
+                android:textColor="@color/colorBackButton"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/S_id"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".............."
+                android:fontFamily="serif"
+                android:textColor="@color/colorBackButton"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile no: "
+                android:textColor="@color/colorBackButton"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/m_num"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".............."
+                android:fontFamily="serif"
+                android:textColor="@color/colorBackButton"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

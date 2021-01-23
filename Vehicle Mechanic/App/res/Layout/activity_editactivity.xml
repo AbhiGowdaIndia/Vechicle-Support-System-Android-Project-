@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".editactivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp">
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/profileimg"
+                    android:layout_width="130sp"
+                    android:layout_height="130sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="28dp"
+                    app:civ_border_color="@color/colorBackButton"
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/ic_pic" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/editimg"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/profileimg"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/edit"
+                    app:backgroundTint="@color/colorBackButton" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First name"
+                    android:fontFamily="serif"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:fontFamily="serif"
+                    android:textSize="28dp"
+                    android:textColor="@color/colorBackButton"/>
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="Surname"
+                    android:fontFamily="serif"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/sname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:fontFamily="serif"
+                    android:textSize="28dp"
+                    android:textColor="@color/colorBackButton"/>
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="Phone number"
+                    android:fontFamily="serif"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/pnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:fontFamily="serif"
+                    android:textSize="28dp"
+                    android:textColor="@color/colorBackButton"/>
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="E-mail address"
+                    android:fontFamily="serif"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:textSize="28dp"
+                    android:textColor="@color/colorBackButton"/>
+               <!-- <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="E-mail address"
+                    android:fontFamily="serif"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:textSize="28dp"
+                    android:textColor="@color/colorBackButton"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

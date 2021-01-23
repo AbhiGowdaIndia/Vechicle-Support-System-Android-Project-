@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/backtmain"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:src="@mipmap/back_btn_blk"
+        app:backgroundTint="@color/whiteBack" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Please sign in"
+                android:textColor="@color/colorBackButton"
+                android:textSize="45dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif"
+                android:text="Email address"
+                android:textColor="@color/colorBackButton"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/lemail"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorBackButton"
+                android:textSize="25dp"/>
+            <EditText
+                android:id="@+id/lpword"
+                android:layout_height="65dp"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:textSize="30dp"/>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progress"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_width="58dp"
+                android:layout_height="58dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/frgtpswrd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="I forgot my password"
+                    android:textColor="#3F51B5"
+                    android:textSize="18dp"  />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/signin"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="90dp"
+                    android:src="@drawable/frnt_btn_arrow"
+                    app:backgroundTint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

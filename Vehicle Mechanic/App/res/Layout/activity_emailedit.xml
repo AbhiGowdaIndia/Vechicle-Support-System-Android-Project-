@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".emailedit">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/backbtn"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:layout_marginTop="25dp"
+                android:src="@mipmap/back_btn_blk"
+                app:backgroundTint="@color/whiteBack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="E-mail address"
+                android:fontFamily="serif"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:fontFamily="serif"
+                android:textSize="28dp"
+                android:textColor="@color/colorBackButton"/>
+
+            <Button
+                android:id="@+id/saveemail"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorBackButton"
+                android:text="save"
+                android:fontFamily="serif"
+                android:textColor="@color/whiteBack"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
