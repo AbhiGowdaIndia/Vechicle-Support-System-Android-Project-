@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Vehicle Service</string>
+    <string name="two_wheeler">Two wheelers includes motorcycles and scooters.</string>
+    <string name="three_wheeler">Three wheelers includes tempo and auto-rickshaws.</string>
+    <string name="four_wheeler">Four wheelers includes car, jeep, tempo traveller and etc.</string>
+    <string name="six_wheeler">Six wheelers includes bus, truck and etc. </string>
+    <string name="six_axel">Six axle wheelers includes Dodge(10 tire) vehicle.</string>
+    <string name="message_and_datarates">By continuing you may receive an SMS for verification. Message and data rates may apply.</string>
+    <string name="title_activity_customer_maps">Map</string>
+    <string name="title_activity_maps_first">Map</string>
+    <string name="title_activity_cust_nav">CustNav</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>
